@@ -14,7 +14,7 @@ public class Main {
 
 		while (true) {
 			System.out.print("Principal (£1000 - £1M): ");
-				principal = scanner.nextLong();
+			principal = scanner.nextLong();
 			if(principal >= 1000 && principal <= 1000000000)
 				break;
 			System.out.println("Please enter a number between 1,000 and 1,000,000");
@@ -30,8 +30,14 @@ public class Main {
 		}
 
 		scanner = new Scanner(System.in);
-		System.out.print("Period: ");
-		period = scanner.nextInt();
+
+		while (true) {
+			System.out.print("Period (Years): ");
+			period = scanner.nextInt();
+			if(period > 0 && period <= 30)
+				break;
+			System.out.println("Please enter a period greater than 0 and up to 30");
+		}
 
 		float interest = annualIntRate /100/12;
 		period = period *12;

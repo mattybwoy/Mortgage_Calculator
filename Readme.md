@@ -10,10 +10,10 @@ To create a functional mortgage calculator using Java
 
 ## Progress
 - User input now recorded
-- Calculator works out correct monthly payments 
+- Calculator works out correct monthly payments
+- Edgecases now accounted for in user input 
 
 ## Improvements
-- Edge-cases
 - Testing
 - GUI
 
