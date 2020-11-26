@@ -6,13 +6,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-    	long principal;
+    	long principal = 0;
     	float annualIntRate;
     	int period;
 
-	Scanner scanner = new Scanner(System.in);
-	System.out.print("Principal: ");
-	principal = scanner.nextLong();
+		Scanner scanner = new Scanner(System.in);
+
+		while (true) {
+			System.out.print("Principal (£1000 - £1M): ");
+				principal = scanner.nextLong();
+			if(principal >= 1000 && principal <= 1000000000)
+				break;
+			System.out.println("Please enter a number between 1,000 and 1,000,000");
+		}
+
 
 		scanner = new Scanner(System.in);
 		System.out.print("Interest Rate: ");

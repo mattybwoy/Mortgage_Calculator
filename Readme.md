@@ -18,7 +18,7 @@ To create a functional mortgage calculator using Java
 - GUI
 
 ## Installation
-- Run buld
+- Run build
 
 ## Collaborators
 mattybwoy
