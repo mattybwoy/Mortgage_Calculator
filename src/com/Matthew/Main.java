@@ -20,10 +20,14 @@ public class Main {
 			System.out.println("Please enter a number between 1,000 and 1,000,000");
 		}
 
-
 		scanner = new Scanner(System.in);
-		System.out.print("Interest Rate: ");
-		annualIntRate = scanner.nextFloat();
+		while (true) {
+			System.out.print("Interest Rate: ");
+			annualIntRate = scanner.nextFloat();
+			if(annualIntRate > 0 && annualIntRate < 30)
+				break;
+			System.out.println("Please enter a rate greater than 0 and below 30");
+		}
 
 		scanner = new Scanner(System.in);
 		System.out.print("Period: ");
